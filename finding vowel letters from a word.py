@@ -8,8 +8,7 @@ class findingVowels():
     
     vowel_letters="aeıioöuü"
     number=0
-    control = True
-    while control:
+    while True:
         word =input("bir kelime girin:")
 
         for i in word:
