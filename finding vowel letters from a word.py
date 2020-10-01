@@ -18,5 +18,6 @@ class findingVowels():
         message="\n{} kelimesinde {} tane sesli harf vardır."
 
         print(message.format(word,number))
+        number = 0
 
 
