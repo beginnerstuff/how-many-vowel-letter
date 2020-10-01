@@ -1,13 +1,22 @@
-sesli_harfler="aeıioöuü"
 
-kelime =input("bir kelime girin:")
 
-sayı=0
-for i in kelime:
-    if i in sesli_harfler:
-        sayı +=1
-mesaj="\n{}kelimesinde {} tane sesli harf vardır."
 
-print(mesaj.format(kelime,sayı))
 
-input("\nçıkmak için bir tuşa basınız.")
+
+class findingVowels():
+    print("sesli harf bulma uygulaması ")
+    
+    vowel_letters="aeıioöuü"
+    number=0
+    control = True
+    while control:
+        word =input("bir kelime girin:")
+
+        for i in word:
+            if i in vowel_letters:
+                number +=1
+        message="\n{} kelimesinde {} tane sesli harf vardır."
+
+        print(message.format(word,number))
+
+
